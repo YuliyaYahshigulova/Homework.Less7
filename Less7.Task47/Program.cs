@@ -6,13 +6,13 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-//Cоздание двумерного массива.
+//Задаем двумерный массив.
 double[,] CreateArray(int m, int n)
 {
     return new double[m, n];
 }
 
-// Заполнение массива
+//Заполняем массив
 double[,] FillArray(double[,] array, double min, double max)
 {
     Random rand = new Random();
@@ -25,7 +25,7 @@ double[,] FillArray(double[,] array, double min, double max)
     return array;
 }
 
-//Печать массива
+//Печатаем массив
 void PrintArray(double[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++, Console.WriteLine(""))
@@ -35,7 +35,7 @@ void PrintArray(double[,] array)
         }
 }
 
-//Заполнение с консоли.
+//Заполняем с клавиатуры.
 int WriteNumber(string str)
 {
     Console.WriteLine(str);
